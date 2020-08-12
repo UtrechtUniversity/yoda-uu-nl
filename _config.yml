@@ -5,3 +5,4 @@ exclude:
 - vagrant
 - Gemfile
 - Gemfile.lock
+- vendor
