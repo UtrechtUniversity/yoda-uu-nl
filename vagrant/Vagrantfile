@@ -1,0 +1,18 @@
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "ubuntu/bionic64"
+
+  config.vm.synced_folder "~/data/docs/yoda-uu-nl", "/home/vagrant/yoda-uu-nl"
+
+  config.vm.provider "virtualbox" do |v|
+
+      v.memory = 1024
+
+      # Synchronize clock in one step if difference is more than 1000 ms / 1s
+      # Copied from https://stackoverflow.com/questions/19490652/how-to-sync-time-on-host-wake-up-within-virtualbox
+      v.customize [ "guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold", 1000 ]
+
+      end
+
+  config.vm.provision :shell, :path => 'install-jekyll.sh'
+end

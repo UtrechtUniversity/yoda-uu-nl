@@ -1,1 +1,7 @@
 remote_theme: UtrechtUniversity/uu-jekyll-theme
+exclude:
+- README.md
+- LICENSE
+- vagrant
+- Gemfile
+- Gemfile.lock
