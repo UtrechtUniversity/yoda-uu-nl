@@ -1,5 +1,12 @@
 # Welcome
-Welcome to the Yoda user help pages. 
+
+## Important notice
+Please note that the user documentation on this site is no longer maintained as
+**Yoda user documentation** has moved to 
+[https://www.uu.nl/yoda](https://www.uu.nl/yoda).
+
+
+##Welcome to Yoda. 
 
 Yoda is a service that provides Utrecht University researchers and their partners with a workspace and an archive that enables them 
 to collaborate, deposit, publish and preserve research data.
